@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Vivado &mdash; MZTIO 0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="实验" href="experiment.html" />
+    <link rel="prev" title="ubuntu" href="ubuntu.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> MZTIO
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">GUIDE</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="README.html">README</a></li>
+<li class="toctree-l1"><a class="reference internal" href="webgui.html">网页控制界面</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RemoteControl.html">远程控制</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ubuntu.html">ubuntu</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Vivado</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">编译</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#in-system-debug">In system debug</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="experiment.html">实验</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code.html">代码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version01.html">demo version 01</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MZTIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Vivado</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Vivado.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="vivado">
+<h1>Vivado<a class="headerlink" href="#vivado" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id1">
+<h2>安装<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar   -zxvf   Xilinx_Vivado_SDK_2018.3_1207_2324.tar.gz
+<span class="nb">cd</span>    Xilinx_Vivado_SDK_2018.3_1207_2324
+./xsetup
+</pre></div>
+</div>
+<img alt="_images/Vivado_install0.png" src="_images/Vivado_install0.png" />
+<p>点击 continue选择不下载最新版本，然后点击 Next 进入下一步</p>
+<img alt="_images/Vivado_install1.png" src="_images/Vivado_install1.png" />
+<p>点击三个可选框，然后点击Next进入下一步</p>
+<img alt="_images/Vivado_install2.png" src="_images/Vivado_install2.png" />
+<p>选择 Vinado HL Design Edition，然后点击Next进入下一步</p>
+<img alt="_images/Vivado_install3.png" src="_images/Vivado_install3.png" />
+<p>直接点击Next进入下一步</p>
+<img alt="_images/Vivado_install4.png" src="_images/Vivado_install4.png" />
+<p>选择安装目录，这里我选择安装到 /home/wuhongyi/Xilinx ，然后点击Next进入下一步</p>
+<img alt="_images/Vivado_install5.png" src="_images/Vivado_install5.png" />
+<p>等待安装完成</p>
+<img alt="_images/Vivado_install6.png" src="_images/Vivado_install6.png" />
+<p>以下两个步骤不是必须的。</p>
+<p>将 vivadoLicence.lic 文件复制到 安装目录，这里为  /home/wuhongyi/Xilinx</p>
+<p>安装完成之后会弹出以下界面</p>
+<img alt="_images/Vivado_install7.png" src="_images/Vivado_install7.png" />
+<p>点击左上方的 Load License，选择我们的 vivadoLicence.lic 文件</p>
+<p>然后点击左上方的 View License Status 可查看破解的IP核</p>
+<img alt="_images/Vivado_install8.png" src="_images/Vivado_install8.png" />
+</div>
+<div class="section" id="id2">
+<h2>编译<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>首次打开时，需要清空 <code class="docutils literal notranslate"><span class="pre">P16_MZTIO_FW_0p01/build</span></code> 文件夹</p>
+<ul class="simple">
+<li><p>Open Vivado. Use Tools &gt; Run Tcl Script to run project generating script …/verilog/xillydemo-vivado.tcl. The resulting project file is in …verilogvivado</p></li>
+<li><p>There have been cases where the script crashes Vivado, and then the compile has ~100 pin property critical warnings. In such cases, start over.</p></li>
+<li><p>Compile demo project (generate bitstream). Ignore warnings and critical warnings.</p></li>
+<li><p>Check build/xillydemo.runs/impl_1/xillydemo.bit</p></li>
+</ul>
+</div>
+<div class="section" id="in-system-debug">
+<h2>In system debug<a class="headerlink" href="#in-system-debug" title="永久链接至标题">¶</a></h2>
+<p>Is possible???</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="experiment.html" class="btn btn-neutral float-right" title="实验" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ubuntu.html" class="btn btn-neutral float-left" title="ubuntu" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2020, Hongyi Wu(吴鸿毅)
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
